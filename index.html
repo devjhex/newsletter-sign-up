@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+
+<main>
+  <header class="head">
+    <picture>
+      <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width:700px)">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="sign-up-image">
+    </picture>
+   
+  </header>
+  
+    <section>
+      <form action="#" class="form">
+        <h1 class="form__title">Stay updated!</h1>
+        <p class="form__text">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="form__list">
+            <li class="item"> <img src="./assets/images/icon-list.svg" alt="icon-list"> Product discovery and building what matters</li>
+            <li class="item"><img src="./assets/images/icon-list.svg" alt="icon-list"> Measuring to ensure updates are a success</li>
+            <li class="item"><img src="./assets/images/icon-list.svg" alt="icon-list">And much more!</li>
+          </ul>
+
+     
+        <div class="form__email">
+          <label for="email">Email address <span class="error-message">Valid Email Required</span></label>
+          <input class="input" type="email" name="email" placeholder="email@company.com" required>
+        </div>
+
+        <div class="form__button">
+          <input class="submitBtn" type="submit" value="Subscribe to monthly newsletter">
+        </div>
+      </form>
+    </section>
+  </main>
+    <section class="success">
+        <div>
+          <img src="/assets/images/icon-success.svg" alt="success-image">
+        </div>
+        <h1 class="form__title">Thanks for subscribing!</h1>
+        <p class="success__text">A confirmation email has been sent to <span class="em">ash@loremcompany.com.</span> 
+          Please open it and click the button inside to confirm your subscription.</p>
+
+          <button class="dismiss">Dismiss message</button>
+    </section>
+     
+  <script src="app.js"></script>
+</body>
+</html>
