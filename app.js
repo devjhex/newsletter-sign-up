@@ -18,6 +18,12 @@ let validate = function(string){
     return regex.test(string);
 }
 
+function handleEvent(e){
+    e.preventDefault();
+}
+form.addEventListener("submit",function(event){
+    handleEvent(event);
+})
 subscribe.addEventListener("click", function(){
     let value = input.value;
     if (validate(value)) {
